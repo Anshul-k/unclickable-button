@@ -57,7 +57,7 @@ const Form = () => {
                 <div className='formContainer'>
                     <div className='form'>
                         <h2>Let's Select a date !</h2>
-                        <form ref={form} onSubmit={handleSubmit}>
+                        <form name='form' ref={form} onSubmit={handleSubmit}>
                             <div className='formInputBox'>
                                 <input type="text" name="name" placeholder="Name" value={name} required onChange={(e) => setName(e.target.value)} />
                             </div>
