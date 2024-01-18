@@ -80,11 +80,11 @@
 
     0%,
     100% {
-        transform: translateY(-40px);
+        transform: translateY(-20px);
     }
 
     50% {
-        transform: translateY(40px);
+        transform: translateY(20px);
     }
 }
 
@@ -112,14 +112,14 @@
 }
 
 .formBox .square:nth-child(4) {
-    bottom: -5rem;
+    bottom: -4rem;
     left: 6.25rem;
     width: 3.125rem;
     height: 3.125rem;
 }
 
 .formBox .square:nth-child(5) {
-    top: -5rem;
+    top: -4rem;
     left: 8.75rem;
     width: 3.75rem;
     height: 3.75rem;
@@ -150,6 +150,10 @@
     flex-direction: column;
 }
 
+.form form {
+    width: 100%;
+}
+
 .form h2 {
     position: relative;
     color: #ffffff;
@@ -157,6 +161,7 @@
     font-weight: 600;
     letter-spacing: 1px;
     margin-bottom: 2.25rem;
+    width: 100%;
 }
 
 .form h2::before {
