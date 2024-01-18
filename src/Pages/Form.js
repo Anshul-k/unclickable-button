@@ -19,12 +19,15 @@ const Form = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
+        // Format the selected date to IST
+        const formattedDate = selectedDate ? selectedDate.toLocaleString('en-US', { timeZone: 'Asia/Kolkata' }) : '';
+
         //create a new object that contains dynamic template params
         const templateParams = {
             name: name,
             age: age,
             insta: insta,
-            date: selectedDate
+            date: formattedDate
         }
 
         //send the email using EmailJS
